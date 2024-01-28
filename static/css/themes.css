@@ -1,0 +1,58 @@
+body {
+    font-family: 'Century Gothic';
+     }
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: absolute;
+    height: 170px;
+    width: 100%;
+    background: #000000;
+}
+header p {
+    font-size: 40px;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: white;
+}
+.imgs {
+    margin-left: 30px;
+    margin-bottom: 75px;
+    border: 2px solid #5f53e5;
+}
+.button {
+    position: fixed;
+    bottom: 10;
+    right: 10;
+    width: 500px;
+    height: 70px;
+    background: black;
+    color: white;
+    font-size: 40px;
+}
+.button:hover {
+      background-color:#1f1136;
+      transition: 0.7s;
+      cursor: pointer;
+}
+.head-but {
+    background: black;
+    margin-top: 115px;
+}
+.but {
+    background: #0000;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #000;
+    padding: 25px;
+}
+.but:hover {
+      transition: 0.7s;
+      cursor: pointer;
+      text-decoration: underline white;
+      text-underline-offset: 10px;
+}

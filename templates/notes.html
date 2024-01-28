@@ -1,0 +1,47 @@
+<title>Заметки</title>
+<link rel="stylesheet" href="../static/css/notes.css">
+<header>
+    <p>Student Multiprog - Заметки</p>
+</header>
+<br>
+{% extends "head.html" %}
+
+{% block content %}
+<br>
+<br>
+<div align="center" class="new">
+    <p style="background: #c5ebe86f; font-size: 50px;">Создайте новую заметку:</p>
+    <br>
+    <div class="a-div">
+        <form method="POST" action="{{ url_for('notes') }}">
+            {{ form.csrf_token }}
+            {{ form.title.label }} <br> {{ form.title }}
+            <br>
+            {{ form.content.label }} <br> {{ form.content }}
+            <br>
+            <br>
+            <br>
+            <button class="subm" type="submit">Создать</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Ваши заметки:</p>
+</div>
+<div style="margin-left: 100px;">
+
+    <br>
+    <ul>
+        {% for note in notes %}
+        <li><a class="link" href="{{ url_for('edit_note', id=note.id) }}">{{ note.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <br>
+    <br>
+</div>
+
+
+{% endblock %}
+
