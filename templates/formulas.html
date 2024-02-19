@@ -3,7 +3,16 @@
       type="text/css"
       href="{{ url_for('static', filename='css/formulas.css') }}">
 <header>
-    <p> Student Multiprog - Формулы </p>
+
+
+                      <div style="float: left; margin-top: 40px;">
+    <p> student's helper - Формулы </p>
+      </div>
+    <div style="float: right;">
+        <a href="/logout">
+            <button class="but-white">Выйти из аккаунта</button>
+        </a>
+    </div>
 </header>
 <br>
 {% extends "head.html" %}

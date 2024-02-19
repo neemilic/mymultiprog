@@ -56,7 +56,7 @@ document.querySelector('.buttons').onclick = (event) => {
         return;
     }
 
-    if (key === '=') {
+    if (key === '='){
         if (b === '') b = a;
         switch (sign) {
             case "+":
@@ -71,14 +71,11 @@ document.querySelector('.buttons').onclick = (event) => {
             case "/":
                 if (b === '0') {
                     clearAll();
-                    out.textContent = 'Ошибка';
-                }
+                    out.textContent = 'Ошибка'; }
                 a = a / b;
-                break;
-        }
+                break; }
         finished = true;
-        out.textContent = a;
-    }
+        out.textContent = a; }
 
     if (key === '+/-') {
         if (b !== '') {

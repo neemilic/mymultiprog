@@ -2,7 +2,14 @@
 <link rel="stylesheet" href="static/css/mdb.min.css">
 <title>Главная  </title>
 <header>
-    <p>Student Multiprog - Главная</p>
+    <div style="float: left; margin-top: 40px;">
+        <p>Student Multiprog - Главная</p>
+    </div>
+    <div style="float: right;">
+        <a href="/logout">
+            <button class="but-white">Выйти из аккаунта</button>
+        </a>
+    </div>
 </header>
 <br>
 {% extends "head.html" %}
@@ -10,8 +17,9 @@
 {% block content %}
 <br>
 <div class="main">
-    <p>Web-сайт для студентов, в которых реализованы такие нужные для студентов фишки как
-        калькулятор, заметки, полезные формулы и материалы по разным предметам, графический калькулятор, а также календарь-планер с возможностью составить себе расписание.
+    <p>Web-сайт для студентов, в котором реализованы такие нужные для студентов функции, как
+        калькулятор, заметки, полезные формулы и материалы по разным предметам, графический калькулятор, а
+        также календарь-планер с возможностью составить себе расписание.
         </p>
     <br>
     <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">

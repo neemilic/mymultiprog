@@ -5,7 +5,16 @@
       href="{{ url_for('static', filename='css/themes.css') }}">
 
 <header>
-    <p>Student Multiprog - {{theme}}</p>
+
+
+                              <div style="float: left; margin-top: 40px;">
+    <p>student's helper - {{theme}}</p>
+      </div>
+    <div style="float: right;">
+        <a href="/logout">
+            <button class="but-white">Выйти из аккаунта</button>
+        </a>
+    </div>
 </header>
 <br>
 {% extends "head.html" %}
