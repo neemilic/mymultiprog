@@ -15,14 +15,7 @@ async function changeDay(day) {
     document.querySelector('.curr-date').classList.remove("curr-date");
     day.target.classList.add("curr-date");
     let response = await fetch('/calendar/get?date=' + get_date());//.then((response) => {
-        /* if (response.ok) { // если HTTP-статус в диапазоне 200-299
-            // получаем тело ответа (см. про этот метод ниже)
 
-            console.log(response.text());
-            document.querySelector('#schedule').innerHTML = json;
-        } else {
-            alert("Ошибка HTTP: " + response.status);
-        } */
     let form = await response.text();
     document.querySelector('#schedule').innerHTML = form;
     // });

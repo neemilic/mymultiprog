@@ -217,6 +217,7 @@ def formulas():
     themes_math = data_math.find('ul').text.split('\n')[1:-4]
     a = data_math.find_all('img')
     b = []
+    print(a)
     for elem in a:
         b.append('https://educon.by' + elem.get('src'))
     imgs_formulas['Формулы сокращенного умножения'] = b[:9]
